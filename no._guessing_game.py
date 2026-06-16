@@ -1,5 +1,5 @@
                       # Number Guessing Game Made By :- SHARAD SHARMA
-            #TASK-1: Number Guessing Game USING PYTHON COMPLETED ON 12-06-2024
+            #TASK-1: Number Guessing Game USING PYTHON COMPLETED ON 16-06-2024
                            # BY Syntecxhub Technologies Pvt. Ltd.       
 
 
