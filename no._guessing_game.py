@@ -1,3 +1,10 @@
+                      # Number Guessing Game Made By :- SHARAD SHARMA
+            #TASK-1: Number Guessing Game USING PYTHON COMPLETED ON 12-06-2024
+                           # BY Syntecxhub Technologies Pvt. Ltd.       
+
+
+
+
 import tkinter as tk
 from tkinter import messagebox
 import random
@@ -5,12 +12,16 @@ import random
 class NumberGuessingGame:
     def __init__(self, root):
         self.root = root
-        self.root.title("Number Guessing Game")
+        self.root.title("Number Guessing Game Developed By @Sharad")
         self.root.geometry("350x300")
+
+      # Level Range Define......
 
         self.best_score = None
         self.ranges = {"Easy": 10, "Medium": 50, "Hard": 100}
-
+    
+      # User optione choosing level difficulty......
+    
         tk.Label(root, text="Select Difficulty").pack()
 
         self.difficulty = tk.StringVar(value="Easy")
@@ -39,6 +50,8 @@ class NumberGuessingGame:
         self.best_lbl = tk.Label(root, text="Best Score: None")
         self.best_lbl.pack()
 
+# Starting the game and checking the guess logic......
+
     def start_game(self):
         self.high = self.ranges[self.difficulty.get()]
         self.secret = random.randint(1, self.high)
@@ -49,6 +62,8 @@ class NumberGuessingGame:
         self.attempts_lbl.config(text="Attempts: 0")
         self.entry.delete(0, tk.END)
         self.guess_btn.config(state="normal")
+
+# Checking the guess and providing feedback to the user based on their input......
 
     def check_guess(self):
         try:
@@ -74,6 +89,8 @@ class NumberGuessingGame:
 
         except ValueError:
             messagebox.showerror("Error", "Enter a valid number!")
+
+# Running the application......
 
 root = tk.Tk()
 NumberGuessingGame(root)
