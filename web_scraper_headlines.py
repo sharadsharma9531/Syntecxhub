@@ -1,3 +1,6 @@
+                      # Web Scraper Headlines Made By :- SHARAD SHARMA
+            #TASK-3: Web Scraper Heaadlines USING PYTHON COMPLETED ON 30-06-2024
+                           # BY Syntecxhub Technologies Pvt. Ltd.       
 import os
 import requests
 from bs4 import BeautifulSoup
